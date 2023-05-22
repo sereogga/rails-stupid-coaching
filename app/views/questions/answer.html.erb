@@ -1,0 +1,14 @@
+<h1>Stupid Coach!</h1>
+<p><%= @answer %></p>
+<p> - YOU</p>
+<div class="bg-secondary">
+  <% if @answer == "I am going to work" %>
+    <p><%= "Great!" %></p>
+  <%  elsif @answer.last == "?" %>
+    <p><%= "Silly question, get dressed and go to work!" %></p>
+  <%  else %>
+    </p><%= "I don't care, get dressed and go to work!" %></p>
+  <% end %>
+  <p>- Your Coach</p>
+</div>
+  <a class="btn btn-warning" href="/ask">Ask a new question</a>
